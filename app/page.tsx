@@ -1389,17 +1389,17 @@ export default function GiaLaiCuisineBlog() {
               </div>
 
               {/* Contact Info */}
-              <div className="space-y-4 -ml-1">
+              <div className="space-y-4 -ml-7">
                 <h3 className="text-lg md:text-xl font-semibold">Liên Hệ</h3>
                 <div className="space-y-3">
                   <a
                     href="mailto:viu106018@donga.edu.vn"
-                    className="flex items-center text-gray-400 hover:text-primary transition-colors group text-sm md:text-base"
+                    className="flex items-center text-gray-400 hover:text-primary transition-colors group text-sm md:text-base truncate max-w-[250px]"
                   >
-                    <svg className="w-4 h-4 md:w-5 md:h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span className="group-hover:translate-x-1 transition-transform text-[13px] md:text-[15px]">viu106018@donga.edu.vn</span>
+                    <span className="transition-all duration-200 text-[13px] md:text-[15px] hover:underline">viu106018@donga.edu.vn</span>
                   </a>
                   <a
                     href="tel:0367604684"
