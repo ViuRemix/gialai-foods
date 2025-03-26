@@ -4,7 +4,6 @@ const nextConfig = {
   poweredByHeader: false,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   images: {
-    domains: ['images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,12 +11,11 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true
   },
   experimental: {
-    serverActions: {
-      allowedOrigins: ['localhost:3000', 'localhost:3001', 'localhost:3002'],
-    },
-  },
+    serverActions: true
+  }
 }
 
 module.exports = nextConfig 
