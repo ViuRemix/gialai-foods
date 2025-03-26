@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  overscroll-behavior-x: none;
+* {
+  -ms-touch-action: pan-y pinch-zoom;
+  touch-action: pan-y pinch-zoom;
+}
+
+html {
   overflow-x: hidden;
-  max-width: 100%;
   position: relative;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  touch-action: pan-y pinch-zoom;
+  -webkit-overflow-scrolling: touch;
   font-family: Arial, Helvetica, sans-serif;
 }
 
