@@ -11,11 +11,16 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
-    unoptimized: true
+    unoptimized: true,
+    minimumCacheTTL: 60
   },
   experimental: {
-    serverActions: true
-  }
+    serverActions: {
+      bodySizeLimit: '2mb'
+    }
+  },
+  compress: true,
+  productionBrowserSourceMaps: false
 }
 
 module.exports = nextConfig 
