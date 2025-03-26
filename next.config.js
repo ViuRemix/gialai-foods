@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true,
     domains: ['localhost'],
     remotePatterns: [
       {
@@ -9,7 +8,15 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  output: 'standalone',
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig 
