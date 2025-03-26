@@ -1,22 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
+  poweredByHeader: false,
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   images: {
-    domains: ['localhost'],
+    domains: ['images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
       },
     ],
   },
-  eslint: {
-    ignoreDuringBuilds: true,
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['localhost:3000', 'localhost:3001', 'localhost:3002'],
+    },
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  output: 'standalone',
-  poweredByHeader: false,
 }
 
 module.exports = nextConfig 
